@@ -1,1 +1,1 @@
-# dht11-sensor
+# fogwing-simulator-for-raspberry-python
