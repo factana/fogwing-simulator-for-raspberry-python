@@ -22,7 +22,7 @@ dev_eui = 'your_Fogwing_IoTHub_deveui'
 temperature = 25
 humidity = 65
 moisture = 430
-data = {
+message = {
         "client_id": client_id, "dev_eui": dev_eui,
         "payload": {"Temperature": temperature, "Humidity": humidity, "Moisture": moisture}
 }
@@ -84,7 +84,7 @@ def Fogwing_IoTHub_client_telemetry_run():
         print("Fogwing IoT Hub: Sample stopped")
 
     client.loop_start()
-    client.publish(topic, json.dumps(data))
+    client.publish(topic, json.dumps(message))
     time.sleep(1)
     client.loop_stop()
 
