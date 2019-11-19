@@ -24,7 +24,7 @@ dev_eui = 'your_Fogwing_IoTHub_deveui'
 # Function gets the data from dht11 sensor and returns teperature and humidity
 def temphum():
     dht = 11
-    th = 2
+    th = 2  # GPIO 2 of raspberry pi
     humidity, temperature = Adafruit_DHT.read_retry(dht, th)
     return humidity, temperature
 

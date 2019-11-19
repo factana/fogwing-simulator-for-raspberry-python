@@ -28,6 +28,7 @@ data = {
 }
 
 
+# The callback for when the client disconnect from the server.
 def on_disconnect(client, userdata, rc):
     if rc == 0:
         print("Fogwing IoT Hub: Client disconnected")
