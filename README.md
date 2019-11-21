@@ -26,7 +26,7 @@ python file_name.py
 If everything goes well you will be seeing successfully published message in command line.
 
 ## Start Analyzing your Data at Fogwing Community portal
-Now you are ready to analyze your data at [Fogwing Community](http://community.fogwing.net/) portal, you can check all the data in data logs inside the portal. 
+Now you are ready to analyze your data at [Fogwing Community](http://community.fogwing.net/) portal, you can check all the data in data logs inside the portal.
 
 ## Getting help and finding Fogwing docs
 * [Fogwing Community Forum]()
