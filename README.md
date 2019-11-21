@@ -14,7 +14,9 @@ This repository contains the following sensor's code:
 
 ## Installing the libraries
 Install all required libraries using pip with our requirement.txt file which is inside all sub folders
-''' pip install requirements.txt '''
+'''
+pip install requirements.txt
+'''
 
 ## Run and Get Started
 Change the credentials with your Fogwing IoTHub access credentials and then you are ready to run
