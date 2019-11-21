@@ -1,4 +1,6 @@
-# **Fogwing Community** (IoT Simulator Programs for Raspberry Pi)
+# **Fogwing Community**
+
+# *IoT Simulator Programs for Raspberry Pi*
 
 This repository contains simulated code for the Fogwing IoT for Python. Which enables devices to send the data seamlessly to Fogwing IoTHub environment.
 
