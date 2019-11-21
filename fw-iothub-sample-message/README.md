@@ -12,7 +12,7 @@ We have provided two python files:
 
 Both code has same logic that sends sample message to Fogwing IoTHub. Only difference is single run sends data once and then it stops but Interval run keeps sending data for each five minute until programs stops manually (Ctl+C).
 
-**Do not use Interval Run for long run, it is better to use cron jobs or celery with single run**
+**Do not use Interval Run for long run, it is better to use cron jobs or celery with single run.**
 
 ## Step - 1
 ### Single Run or Interval Run
