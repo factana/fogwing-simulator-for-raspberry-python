@@ -12,4 +12,6 @@ This repository contains the following sensor's code:
 * [Sample Message](https://github.com/factana/fogwing-simulator-for-raspberry-python/tree/master/fw-iothub-sample-message)
 * Coming Soon: Soil Moisture sensor
 
-##
+## Installing the libraries
+Install all required libraries using pip with our requirement.txt file which is inside all sub folders
+* pip install requirements.txt
