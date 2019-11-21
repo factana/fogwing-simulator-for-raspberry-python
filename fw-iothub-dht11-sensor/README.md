@@ -1,6 +1,6 @@
 # *Fogwing IoT Simulator Programs for Raspberry Pi with DHT11*
 
-This directory provides two 
+This directory provides two
 
 **Note that these SDKs are currently in preview, and are subject to change.**
 
