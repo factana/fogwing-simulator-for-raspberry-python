@@ -98,12 +98,9 @@ def Fogwing_IoTHub_client_telemetry_run():
         print("Fogwing IoT Hub: Sample stopped")
 
     client.loop_start()
-    seq = 1
-    while True:
-        result, mid = client.publish(topic, json.dumps(message), retain=False)
-        print('Fogwing IoT Hub: result value is {} and mid value is {}'.format(result, mid))
-        seq += 1
-        time.sleep(300)  # This value will publish message to Fogwing IoT Hub after every 5 min once
+    client.publish(topic, json.dumps(message))
+    time.sleep(1)
+    client.loop_stop()
 
 
 if __name__ == '__main__':
