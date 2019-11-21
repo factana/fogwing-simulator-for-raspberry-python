@@ -17,13 +17,13 @@ Both code has same logic that collects data from DHT11 and sends it to Fogwing I
 
 ## Step - 1
 ### Single Run or Interval Run
-According to your requirement copy any of the Python file to your raspberry and thats it !, Your are now done with coding part.
+According to your requirement copy any of the Python file to your raspberry and thats it ! Your are now done with coding part.
 
 ## Step - 2
 ### Installing the libraries
-Install all required libraries using pip with our requirement.txt file which is inside all sub folders of this repository.
+Install all required libraries using pip with our requirement.txt file.
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Step - 3
