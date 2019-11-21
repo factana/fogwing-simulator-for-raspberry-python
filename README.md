@@ -4,7 +4,7 @@
 
 This repository contains simulated code for the Fogwing IoT for Python. Which enables devices to send the data seamlessly to Fogwing IoTHub environment.
 
-**Note that this SDKs is currently in preview, and is subject to change.**
+**Note that these SDKs are currently in preview, and are subject to change.**
 
 ## Fogwing IoT Simulation for Python
 This repository contains the following sensor's code:
@@ -14,4 +14,7 @@ This repository contains the following sensor's code:
 
 ## Installing the libraries
 Install all required libraries using pip with our requirement.txt file which is inside all sub folders
-* pip install requirements.txt
+''' pip install requirements.txt '''
+
+## Run and Get Started
+Change the credentials with your Fogwing IoTHub access credentials and then you are ready to run
