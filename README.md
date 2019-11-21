@@ -10,3 +10,7 @@ This repository contains simulated code for the Fogwing IoT for Python. Which en
 This repository contains the following sensor's code:
 * DHT11 Sensor
 * Sample message
+* Coming Soon: Soil Moisture sensor
+* [GitHub](http://github.com)
+
+###
