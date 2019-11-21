@@ -1,6 +1,6 @@
 # *Fogwing IoT Simulator Program for Raspberry Pi with sample message*
 
-This directory provides two Python file that reads the data from DHT11 sensor and sends to Fogwing IoTHub.
+This directory provides two Python file that sends sample message to Fogwing IoTHub.
 
 **Note that these SDKs are currently in preview and are subject to change.**
 
