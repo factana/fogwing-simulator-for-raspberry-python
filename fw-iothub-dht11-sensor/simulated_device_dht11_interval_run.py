@@ -95,7 +95,7 @@ def Fogwing_IoTHub_client_telemetry_run():
     except Exception as ex:
         print("Fogwing IoT Hub: Connection failed: ", ex)
     except KeyboardInterrupt:
-        print("Fogwing IoT Hub: Sample stopped")
+        print("Fogwing IoT Hub: DHT11 stopped")
 
     client.loop_start()
     client.publish(topic, json.dumps(message))
