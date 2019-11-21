@@ -4,9 +4,6 @@ This directory provides two Python file that sends sample message to Fogwing IoT
 
 **Note that these SDKs are currently in preview and are subject to change.**
 
-## Hardware Instruction
-We have used GPIO 2 of raspberry for this code to collect DHT11 sensor data, so you need to connect your DHT11 sensor to GPIO 2 of raspberry. You can change this pin to any GPIO of Raspberry by defining same pin in code.
-
 ## Fogwing IoT Simulation for DHT11
 We have provided two python files:
 * [Single Run - simulated_device_message_single_run.py](https://github.com/factana/fogwing-simulator-for-raspberry-python/blob/master/fw-iothub-sample-message/simulated_device_message_single_run.py)
