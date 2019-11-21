@@ -2,9 +2,9 @@
 
 # *IoT Simulator Programs for Raspberry Pi*
 
-This repository contains simulated code for the Fogwing IoT for Python. Which enables devices to send the data seamlessly to Fogwing IoTHub environment.
+This repository contains simulated code for the Fogwing IoT for Python that enables devices to send the data seamlessly to Fogwing IoTHub environment.
 
-**Note that these SDKs are currently in preview, and are subject to change.**
+**Note that these SDKs are currently in preview and are subject to change.**
 
 ## Fogwing IoT Simulation for Python
 This repository contains the following sensor's code:
@@ -13,20 +13,20 @@ This repository contains the following sensor's code:
 * Coming Soon: Soil Moisture sensor
 
 ## Installing the libraries
-Install all required libraries using pip with our requirement.txt file which is inside all sub folders of this repository.
+Install all required libraries using pip with our requirement.txt file that is stored in all sub folders of this repository.
 ```
 pip install requirements.txt
 ```
 
 ## Run and Get Started with Fogwing IoT
-Change the client_id, username and password with your Fogwing IoTHub access credentials, after this change you can run your file with below command.
+Change the client_id, username and password with your Fogwing IoTHub access credentials, after which you can run your file with the below command.
 ```
 python file_name.py
 ```
-If everything goes well you will be seeing successfully published message in command line.
+provided everything goes well you will find successfully published message in the command line.
 
 ## Start Analyzing your Data at Fogwing Community portal
-Now you are ready to analyze your data at [Fogwing Community](http://community.fogwing.net/) portal, you can check all the data in data logs inside the portal.
+Now you are ready to analyze your data at [Fogwing Community](http://community.fogwing.net/) portal, you can access the data in data logs section of the portal.
 
 ## Getting help and finding Fogwing docs
 * [Fogwing Community Forum]()
