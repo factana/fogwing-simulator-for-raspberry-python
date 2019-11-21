@@ -12,6 +12,7 @@ We have provided two python files:
 * [Single Run - simulated_device_dht11_single_run.py](https://github.com/factana/fogwing-simulator-for-raspberry-python/blob/master/fw-iothub-dht11-sensor/simulated_device_dht11_single_run.py)
 
 * [Interval Run - simulated_device_dht11_interval_run.py](https://github.com/factana/fogwing-simulator-for-raspberry-python/blob/master/fw-iothub-dht11-sensor/simulated_device_dht11_interval_run.py)
+
 Both code has same logic that collects data from DHT11 and sends it to Fogwing IoTHub. Only difference is single run sends data once and then it stops but Interval run keeps sending data for each five minute until programs stops manually (Ctl+C).
 
 ## Step - 1
