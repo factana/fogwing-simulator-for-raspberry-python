@@ -15,11 +15,11 @@ We have provided two python files:
 
 Both code has same logic that collects data from DHT11 and sends it to Fogwing IoTHub. Only difference is single run sends data once and then it stops but Interval run keeps sending data for each five minute until programs stops manually (Ctl+C).
 
-**Do not use Interval Run for long run, it is better to user cron jobs or celery with single run**
+**Do not use Interval Run for long run, it is better to use cron jobs or celery with single run**
 
 ## Step - 1
 ### Single Run or Interval Run
-According to your requirement copy any of the Python file to your raspberry and thats it ! Your are now done with coding part.
+According to your requirement copy any of the Python file to your raspberry and that's it ! Your are now done with coding part.
 
 ## Step - 2
 ### Installing the libraries
