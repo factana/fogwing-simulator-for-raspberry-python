@@ -13,10 +13,13 @@ This repository contains the following sensor's code:
 * Coming Soon: Soil Moisture sensor
 
 ## Installing the libraries
-Install all required libraries using pip with our requirement.txt file which is inside all sub folders
+Install all required libraries using pip with our requirement.txt file which is inside all sub folders of this repository
 ```
 pip install requirements.txt
 ```
 
-## Run and Get Started
-Change the credentials with your Fogwing IoTHub access credentials and then you are ready to run
+## Run and Get Started with Fogwing IoT
+Change the client_id, username and password with your Fogwing IoTHub access credentials, after this change you can run your file with below command.
+```
+python file_name.py
+```
