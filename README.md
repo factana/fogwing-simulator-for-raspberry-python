@@ -10,7 +10,7 @@ This repository contains simulated code for the Fogwing IoT for Python that enab
 This repository contains the following sensor's code:
 * [DHT11 Sensor](https://github.com/factana/fogwing-simulator-for-raspberry-python/tree/master/fw-iothub-dht11-sensor)
 * [Sample Message](https://github.com/factana/fogwing-simulator-for-raspberry-python/tree/master/fw-iothub-sample-message)
-* Soil Moisture Sensor: Coming Soon
+* [Soil Moisture Sensor](https://github.com/factana/fogwing-simulator-for-raspberry-python/tree/master/fw-iothub-soilmoisture-sensor)
 
 ## Installing the libraries
 Install all required libraries using pip with our requirement.txt file that is stored in all sub folders of this repository.
