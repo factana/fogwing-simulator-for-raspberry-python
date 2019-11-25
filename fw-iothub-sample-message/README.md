@@ -1,6 +1,6 @@
 # *Fogwing IoT Simulator Program for Raspberry Pi with sample message*
 
-This directory provides two Python file that sends sample message to Fogwing IoTHub.
+This directory provides two Python files that send sample messages to Fogwing IoTHub.
 
 **Note that these SDKs are currently in preview and are subject to change.**
 
@@ -10,13 +10,13 @@ We have provided two python files:
 
 * [Interval Run - simulated_device_message_interval_run.py](https://github.com/factana/fogwing-simulator-for-raspberry-python/blob/master/fw-iothub-sample-message/simulated_device_message_interval_run.py)
 
-Both code has same logic that sends sample message to Fogwing IoTHub. Only difference is single run sends data once and then it stops but Interval run keeps sending data for each five minute until programs stops manually (Ctl+C).
+Both codes have the same logic that sends sample messages to Fogwing IoTHub. Only difference is that a single run sends data once and then it stops whereas an Interval run keeps sending data with every five minute gap until programs stops manually (Ctl+C).
 
 **Do not use Interval Run for long run, it is better to use cron jobs or celery with single run.**
 
 ## Step - 1
 ### Single Run or Interval Run
-According to your requirement copy any of the Python file to your raspberry and that's it ! Your are now done with coding part.
+According to your requirement, copy any of the Python files to your raspberry and you are good to start ! You now finish with coding part.
 
 ## Step - 2
 ### Installing the libraries
@@ -27,15 +27,15 @@ pip install -r requirements.txt
 
 ## Step - 3
 ### Run and Get Started with Fogwing IoT
-Change the client_id, username and password with your Fogwing IoTHub access credentials, after this change you can run your file with below command.
+Change the client_id, username and password with your Fogwing IoTHub access credentials, after which you can run your file with the below command.
 ```
 python file_name.py
 ```
-If everything goes well you will be seeing successfully published message in command line.
+Provided everything goes in line with the above mentioned instructions you will be able to see a message that reads 'successfully published' in the command line.
 
 ## Step - 4
 ### Start Analyzing your Data at Fogwing Community portal
-Now you are ready to analyze your data at [Fogwing Community](http://community.fogwing.net/) portal, you can check all the data in data logs inside the portal.
+Now you are ready to analyze your data at [Fogwing Community](http://community.fogwing.net/) portal, you can check all data in the data logs within the portal.
 
 ## Getting help and finding Fogwing docs
 * [Fogwing Community Forum]()
