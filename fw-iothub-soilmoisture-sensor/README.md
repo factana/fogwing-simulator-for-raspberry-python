@@ -1,4 +1,4 @@
-# *Fogwing IoT Simulator Program for Raspberry Pi with Soil Moisture Sensor*
+# *Fogwing IoT Simulator Program for Raspberry Pi with Soil Moisture*
 
 This directory provides two Python files that reads the data from Soil Moisture sensor and sends the same to Fogwing IoTHub.
 
