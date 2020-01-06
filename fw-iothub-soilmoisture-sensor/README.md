@@ -6,7 +6,7 @@ This directory provides two Python files that reads the data from Soil Moisture 
 
 ## Hardware Instruction
 * The CH0 -> CH7 pins are the analog inputs for MCP3008 from Soil Moisture Sensor. By default input to MCP3008 is CH2, following which you can change this pin to any Channel of MCP3008 by defining the same pin in code.
-* Sensor VCC -> Raspberry PI 5v
+* Sensor VCC -> Raspberry PI 5V
 * Sensor GND -> Raspberry PI GND
 
 |     MCP3008    |    Raspberry PI     |
