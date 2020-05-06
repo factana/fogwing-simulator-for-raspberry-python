@@ -34,9 +34,9 @@ python file_name.py
 Provided everything goes in line with the above mentioned instructions you will be able to see a message that reads 'successfully published' in the command line.
 
 ## Step - 4
-### Start Analyzing your Data at Fogwing Community portal
-Now you are ready to analyze your data at [Fogwing Community](http://community.fogwing.net/) portal, you can check all data in the data logs within the portal.
+### Start Analyzing your Data at Fogwing Platform
+Now you are ready to analyze your data at [Fogwing Platform](http://community.fogwing.net/) portal, you can check all data in the data logs within the portal.
 
 ## Getting help and finding Fogwing docs
-* [Fogwing Community Forum]()
-* [Fogwing Community Docs](https://docs.fogwing.io/)
+* [Fogwing Platform Forum]()
+* [Fogwing Platform Docs](https://docs.fogwing.io/)
