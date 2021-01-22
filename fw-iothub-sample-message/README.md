@@ -35,7 +35,7 @@ Provided everything goes in line with the above mentioned instructions you will 
 
 ## Step - 4
 ### Start Analyzing your Data at Fogwing Platform
-Now you are ready to analyze your data at [Fogwing Platform](http://community.fogwing.net/) portal, you can check all data in the data logs within the portal.
+Now you are ready to analyze your data at [Fogwing Platform](https://enterprise.fogwing.net/) portal, you can check all data in the data logs within the portal.
 
 ## Getting help and finding Fogwing docs
 * [Fogwing Platform Forum]()
