@@ -29,5 +29,5 @@ provided everything goes well you will find a message that reads successfully pu
 Now you are ready to analyze your data at [Fogwing Platform](https://enterprise.fogwing.net/) portal, you can access the data in data logs section of the portal.
 
 ## Getting help and finding Fogwing docs
-* [Fogwing Platform Forum]()
+* [Fogwing Platform Forum](https://enterprise.fogwing.net/)
 * [Fogwing Platform Docs](https://docs.fogwing.io/)
