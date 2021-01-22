@@ -16,6 +16,8 @@ client_id = 'Enter your_Fogwing_IoTHub_clientid'
 username = 'Enter your_Fogwing_IoTHub_username'
 password = 'Enter your_Fogwing_IoTHub_password'
 
+# Set data interval 
+data_interval = 'Enter data frequency as per you requirements in seconds'
 
 # Function gets the data from dht11 sensor and returns teperature and humidity
 def temphum():
@@ -89,10 +91,13 @@ def Fogwing_IoTHub_client_telemetry_run():
         print("Fogwing IoT Hub: DHT11 stopped")
 
     client.loop_start()
-    client.publish(topic, json.dumps(message))
-    time.sleep(1)
-    client.loop_stop()
-
+    seq = 1
+    while True:
+        
+        client.publish(topic, json.dumps(message))
+        seq += 1
+        time.sleep(data_interval)
+    
 
 if __name__ == '__main__':
     print("Fogwing IoT Hub: Started to connecting...")
