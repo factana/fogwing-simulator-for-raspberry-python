@@ -1,7 +1,3 @@
-''' * Copyright (C) 2019 Factana Computing Pvt Ltd.
-    * All Rights Reserved.
-    * This file is subject to the terms and conditions defined in
-    * file 'LICENSE.txt', which is part of this source code package.'''
 
 import spidev
 import os
@@ -10,15 +6,15 @@ import json
 import paho.mqtt.client as mqtt
 
 # Do not change Fogwing IoT Hub host, port and topic
-host_name = 'iothub.community.fogwing.net'
+host_name = 'iothub.enterprise.fogwing.net'
 port = 8883
-topic = 'fwcom/inbound/edge/data'
+topic = 'Enter fogwing IoTHub publish topic'
 
 # Use your Fogwing IoT Hub access credentials
 client_id = 'your_Fogwing_IoTHub_clientid'
 username = 'your_Fogwing_IoTHub_username'
 password = 'your_Fogwing_IoTHub_password'
-dev_eui = 'your_Fogwing_IoTHub_deveui'
+
 
 # (Bus,device)connects to the specified spi device,opening( spidev<bus>.<device>)
 spi = spidev.SpiDev()
@@ -40,12 +36,8 @@ def soil_moisture():
 
 sm = soil_moisture()
 
-# Define the JSON message to send to Fogwing IoT Hub
-message = {"client_id": client_id, "dev_eui": dev_eui,
-            "payload": {"soil_moisture": sm
-                }
-    }
-
+# Define the JSON message for sending data to Fogwing IoTHub.
+message = {"soil_moisture": sm }
 
 # The callback for when the client disconnect from the server.
 def on_disconnect(client, userdata, rc):
