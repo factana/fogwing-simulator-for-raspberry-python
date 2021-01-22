@@ -1,7 +1,4 @@
-''' * Copyright (C) 2019 Factana Computing Pvt Ltd.
-    * All Rights Reserved.
-    * This file is subject to the terms and conditions defined in
-    * file 'LICENSE.txt', which is part of this source code package.'''
+
 
 import Adafruit_DHT
 import RPi.GPIO as GPIO
@@ -10,15 +7,14 @@ import json
 import paho.mqtt.client as mqtt
 
 # Do not change Fogwing IoT Hub host, port and topic
-host_name = 'iothub.community.fogwing.net'
+host_name = 'iothub.enterprise.fogwing.net'
 port = 8883
-topic = 'fwcom/inbound/edge/data'
+topic = 'Enter your Fogwing IoTHub publish topic'
 
 # Use your Fogwing IoT Hub access credentials
-client_id = 'your_Fogwing_IoTHub_clientid'
-username = 'your_Fogwing_IoTHub_username'
-password = 'your_Fogwing_IoTHub_password'
-dev_eui = 'your_Fogwing_IoTHub_deveui'
+client_id = 'Enter your_Fogwing_IoTHub_clientid'
+username = 'Enter your_Fogwing_IoTHub_username'
+password = 'Enter your_Fogwing_IoTHub_password'
 
 
 # Function gets the data from dht11 sensor and returns teperature and humidity
@@ -35,13 +31,8 @@ humidity = result_temphum[0]
 temperature = result_temphum[1]
 
 # Define the JSON message to send to Fogwing IoT Hub
-message = { "client_id": client_id, "dev_eui": dev_eui,
-            "payload": { "Temperature": temperature,
-                         "Humidity": humidity,
-                }
-    }
-
-
+message = { "Temperature": temperature, "Humidity": humidity}
+               
 # The callback for when the client disconnect from the server.
 def on_disconnect(client, userdata, rc):
     if rc == 0:
