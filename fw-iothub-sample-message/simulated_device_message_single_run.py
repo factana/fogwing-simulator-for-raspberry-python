@@ -1,8 +1,8 @@
 
-
 import paho.mqtt.client as mqtt
 import json
 import time
+import random
 
 # Do not change Fogwing IoT Hub host, port and topic
 host_name = 'iothub.enterprise.fogwing.net'
@@ -14,21 +14,24 @@ client_id = 'your_Fogwing_IoTHub_clientid'
 username = 'your_Fogwing_IoTHub_username'
 password = 'your_Fogwing_IoTHub_password'
 
+
 # Define the JSON message to send to Fogwing IoT Hub
-temperature = 25
-humidity = 65
-moisture = 430
+temperature = round(random.uniform(25.6, 27.5), 2)
+humidity = round(random.uniform(55, 65.5), 2)
+moisture = round(random.uniform(75, 80), 2)
+
+# Data frequency
+freq = 5
 
 # JSOn data format
-message = { "Temperature": temperature, "Humidity": humidity, "Moisture": moisture }
-       
+message = {"Temperature": temperature, "Humidity": humidity, "Moisture": moisture}
 
 
 # The callback for when the client disconnect from the server.
 def on_disconnect(client, userdata, rc):
     if rc == 0:
-       print("Fogwing IoT Hub: Client disconnected")
-       client.connected_flag = False
+        print("Fogwing IoT Hub: Client disconnected")
+        client.connected_flag = False
 
 
 # The callback for when the client receives a CONNACK response from the server.
