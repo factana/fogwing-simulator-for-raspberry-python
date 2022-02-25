@@ -6,12 +6,13 @@ import random
 # Do not change Fogwing IoT Hub host, port and topic
 host_name = 'iothub.enterprise.fogwing.net'
 port = 8883
-topic = 'fwent/edge/171de0153fae20f8/inbound'
+topic = 'Enter you IoTHub publish topic'
 
 # Use your Fogwing IoT Hub access credentials
-client_id = '1151-1103-1080-1002'
-username = 'ajaykanojiya'
-password = 'Ajaya@123'
+client_id = 'your_Fogwing_IoTHub_clientid'
+username = 'your_Fogwing_IoTHub_username'
+password = 'your_Fogwing_IoTHub_password'
+
 
 # Data frequency
 freq = 5
