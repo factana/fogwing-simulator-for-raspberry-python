@@ -1,27 +1,90 @@
+# import re
+# import os
+# import yaml
+# import time
+#
+#
+# class WiFiSettings:
+#
+#     def __init__(self):
+#         self.config_path = "/etc/netplan/50-cloud-init.yaml"
+#
+#     @staticmethod
+#     def scan_wifi_nw():
+#         ssid = ""
+#         cmd_res = os.popen('sudo iwlist wlan0 scan | grep ESSID').read()
+#         time.sleep(0.05)
+#
+#         while len(cmd_res) != 0:
+#             match = re.search('ESSID:\"(.+?)\"\n', cmd_res)
+#
+#             ssid += match.group(1) + ','
+#             cmd_res = '\n'.join(cmd_res.split('\n')[1:])
+#
+#         return ssid[:len(ssid) - 1].split(',')
+#
+#     def wifi_config(self, ssid, pwd):
+#         config = {
+#             "network": {
+#                 "ethernets": {
+#                     "eth0": {
+#                         "dhcp4": True,
+#                         "optional": True
+#                     }
+#                 },
+#                 "version": 2,
+#                 "wifis": {
+#                     "wlan0": {
+#                         "dhcp4": True,
+#                         "optional": True,
+#                         "access-points": {
+#                             str(ssid): {
+#                                 "password": str(pwd)
+#                             }
+#                         }
+#                     }
+#                 }
+#             }
+#         }
+#
+#         with open(self.config_path, "w") as file:
+#             file.write(yaml.dump(config))
+#
+#         os.popen("sudo netplan apply").read()
+#
+#         trials = 0
+#         conn_status = ''
+#         while trials < 15:
+#             conn_status = os.popen("sudo iw dev wlan0 link").read()
+#             if "Connected" in conn_status:
+#                 conn_status = True
+#                 break
+#             else:
+#                 conn_status = False
+#             trials += 1
+#             time.sleep(1)
+#         return conn_status
+
+
+
 
 import paho.mqtt.client as mqtt
 import json
 import time
+import random
 
 # Do not change Fogwing IoT Hub host, port and topic
 host_name = 'iothub.enterprise.fogwing.net'
 port = 8883
-topic = 'Enter your_Fogwing_IoTHub publish topic'
+topic = 'fwent/edge/171de0153fae20f8/inbound'
 
 # Use your Fogwing IoT Hub access credentials
-client_id = 'your_Fogwing_IoTHub_clientid'
-username = 'your_Fogwing_IoTHub_username'
-password = 'your_Fogwing_IoTHub_password'
+client_id = '1151-1103-1080-1002'
+username = 'ajaykanojiya'
+password = 'Ajaya@123'
 
-
-# Define the JSON message to send to Fogwing IoT Hub
-temperature = 25
-humidity = 65
-moisture = 430
-
-# JSON data
-message = {"Temperature": temperature, "Humidity": humidity, "Moisture": moisture}
-
+# Data frequency
+freq = 5
 
 # The callback for when the client disconnect from the server.
 def on_disconnect(client, userdata, rc):
@@ -81,10 +144,19 @@ def Fogwing_IoTHub_client_telemetry_run():
     client.loop_start()
     seq = 1
     while True:
+        # Define the JSON message to send to Fogwing IoT Hub
+        temperature = round(random.uniform(25.5, 28.5), 2)
+        humidity = round(random.uniform(65.5, 70.5), 2)
+        moisture = round(random.uniform(80, 85), 2)
+
+        # JSON data
+        message = {"Temperature": temperature, "Humidity": humidity, "Moisture": moisture}
+
         result, mid = client.publish(topic, json.dumps(message), retain=False)
         print('Fogwing IoT Hub: result value is {} and mid value is {}'.format(result, mid))
+        print(json.dumps(message, indent=4))
         seq += 1
-        time.sleep(300)  # This value will publish message to Fogwing IoT Hub after every 5 min once
+        time.sleep(freq)  # This value will publish message to Fogwing IoT Hub after every 5 min once
 
 
 if __name__ == '__main__':
