@@ -5,7 +5,7 @@ import time
 import random
 
 # Do not change Fogwing IoT Hub host, port and topic
-host_name = 'iothub.enterprise.fogwing.net'
+host_name = 'iothub.fogwing.net'
 port = 8883
 topic = 'Enter you IoTHub publish topic'
 
